@@ -97,7 +97,7 @@ Host 与 Client 的边界：Client 只通过 `/api/memo`（GET 列表、POST 变
 
 | 渠道 | 别人的安装方式 | 状态 |
 |---|---|---|
-| npm | 插件页 Add plugin → `dsh-memo-plugin` | 首次发布需 npm 暂存审核（staged publishing） |
+| npm | 插件页 Add plugin → `dsh-memo-plugin` | **已上线 1.0.0**，可直接安装 |
 | Git 仓库 | 插件页 Add plugin → Git 地址 | 推送仓库后可用 |
 | 离线 tgz | 双击 `install-memo-plugin.command`，或插件页选 tgz | 立即可用 |
 

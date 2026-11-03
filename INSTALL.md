@@ -7,7 +7,7 @@
 
 | 渠道 | 别人怎么装 | 状态 |
 |---|---|---|
-| **npm** | 插件页 Add plugin → `dsh-memo-plugin` | 首次发布处于 npm **暂存审核（staged publishing）**，通过后即可用 |
+| **npm** | 插件页 Add plugin → `dsh-memo-plugin` | **已上线（1.0.0）**，可直接安装 |
 | **Git 仓库** | 插件页 Add plugin → Git 地址 | 推送仓库后可用（免审核、秒级生效） |
 | **离线 tgz** | 双击 `install-memo-plugin.command` 或插件页选 tgz | 现在就能用 |
 
@@ -16,7 +16,7 @@
 1. 打开 DeepSeek Harness → 左侧「插件」
 2. 点「Add plugin / 添加插件」
 3. 填入以下任意一种：
-   - npm 包名 `dsh-memo-plugin`（需 npm 审核通过后）
+   - npm 包名 `dsh-memo-plugin`（也可写 `dsh-memo-plugin@1.0.0` 锁定版本）
    - Git 地址，例如 `https://github.com/<you>/dsh-memo`
    - 本地 `.tgz` 文件（下载后选中）
 4. 点「Enable now」启用
@@ -72,6 +72,6 @@ Git / tgz 安装时依赖名也是 `dsh-memo-plugin`（发布包名一致），�
 ./scripts/publish-memo-plugin.sh               # 发布到 npm
 ```
 
-- npm 对**首次发布的新包**走 staged publishing：包名会先被占位（`0.0.0-stage`），真实版本审核通过后才可安装；被拒后修好并**升版本号**再发
+- npm 对**首次发布的新包**走 staged publishing：包名先占位（`0.0.0-stage`），审核通过后才可安装。1.0.0 已通过审核；以后升级发布时同样**需要新的版本号**
 - 发布构建会把包名同步改写进 `package.json`、`cordis.patch.yml` 和 `client.js` 的 module id（DSH 客户端 loader 会校验三者一致）；源码目录仍保持 `@local/dsh-memo`，不影响本机 `link:` 安装
 - 推送 Git 仓库后，可用 `./scripts/build-memo-plugin.sh --repo https://github.com/<you>/dsh-memo` 把仓库地址写进发布包
