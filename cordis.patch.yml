@@ -1,0 +1,6 @@
+# Insert the memo bundle's Host row. The same package also carries the Web
+# Client module (`dsh.client`), which the client module loader picks up from
+# this live Loader entry.
+- insert:
+    - id: memo
+      name: '@local/dsh-memo'
