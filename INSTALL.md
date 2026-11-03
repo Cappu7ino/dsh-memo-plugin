@@ -17,7 +17,7 @@
 2. 点「Add plugin / 添加插件」
 3. 填入以下任意一种：
    - npm 包名 `dsh-memo-plugin`（也可写 `dsh-memo-plugin@1.0.0` 锁定版本）
-   - Git 地址，例如 `https://github.com/<you>/dsh-memo`
+   - Git 地址，例如 `https://github.com/Cappu7ino/dsh-memo`
    - 本地 `.tgz` 文件（下载后选中）
 4. 点「Enable now」启用
 5. **完全退出 DSH（⌘Q）再重新打开**（Host 插件需要重启加载）
@@ -74,4 +74,4 @@ Git / tgz 安装时依赖名也是 `dsh-memo-plugin`（发布包名一致），�
 
 - npm 对**首次发布的新包**走 staged publishing：包名先占位（`0.0.0-stage`），审核通过后才可安装。1.0.0 已通过审核；以后升级发布时同样**需要新的版本号**
 - 发布构建会把包名同步改写进 `package.json`、`cordis.patch.yml` 和 `client.js` 的 module id（DSH 客户端 loader 会校验三者一致）；源码目录仍保持 `@local/dsh-memo`，不影响本机 `link:` 安装
-- 推送 Git 仓库后，可用 `./scripts/build-memo-plugin.sh --repo https://github.com/<you>/dsh-memo` 把仓库地址写进发布包
+- 推送 Git 仓库后，可用 `./scripts/build-memo-plugin.sh --repo https://github.com/Cappu7ino/dsh-memo` 把仓库地址写进发布包

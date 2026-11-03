@@ -35,5 +35,13 @@
   "peerDependencies": {
     "@deepseek-ai/dsh-tools": "^0.2.1-rc.5"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cappu7ino/dsh-memo.git"
+  },
+  "homepage": "https://github.com/Cappu7ino/dsh-memo#readme",
+  "bugs": {
+    "url": "https://github.com/Cappu7ino/dsh-memo/issues"
+  }
 }
