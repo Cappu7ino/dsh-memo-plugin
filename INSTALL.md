@@ -32,7 +32,18 @@
   plugin --profile desktop add <包名 | .tgz 路径 | Git 地址>
 ```
 
-Git 地址也可以写成 pnpm 的 `git+https://…` 形式。安装完成后**完全退出并重开 DSH**。
+Git 地址的实测写法：
+
+```sh
+# GitHub 简写
+dsh plugin --profile desktop add github:Cappu7ino/dsh-memo
+# 等价 git URL
+dsh plugin --profile desktop add git+https://github.com/Cappu7ino/dsh-memo.git
+# 锁定版本（需要 tag）
+dsh plugin --profile desktop add github:Cappu7ino/dsh-memo#v1.0.0
+```
+
+安装完成后**完全退出并重开 DSH**。
 
 > 如果提示 profile 未初始化：先打开一次 DSH Desktop，再完全退出后执行命令。
 
