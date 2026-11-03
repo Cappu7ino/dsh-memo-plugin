@@ -38,11 +38,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Cappu7ino/dsh-memo.git"
+    "url": "git+https://github.com/Cappu7ino/dsh-memo-plugin.git"
   },
-  "homepage": "https://github.com/Cappu7ino/dsh-memo#readme",
+  "homepage": "https://github.com/Cappu7ino/dsh-memo-plugin#readme",
   "bugs": {
-    "url": "https://github.com/Cappu7ino/dsh-memo/issues"
+    "url": "https://github.com/Cappu7ino/dsh-memo-plugin/issues"
   },
   "author": "Cappu7ino <56630005+Cappu7ino@users.noreply.github.com>"
 }
